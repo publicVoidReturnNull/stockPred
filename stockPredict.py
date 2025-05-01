@@ -3,7 +3,6 @@ from tensorflow.keras import layers, models
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import logging
 
 def processData():
     file_path = '/Users/joshuawang/Downloads/MLProj/MYNN/stockPredictionzz/aal_stock_5yr.csv'
@@ -134,6 +133,5 @@ def main():
     # Plot results
     plot_results(history, predictions.flatten(), val_y, X_mean, X_std)
 
-    
 if __name__ == "__main__":
     main()
